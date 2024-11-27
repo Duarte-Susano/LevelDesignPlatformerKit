@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxcntuh1t3bd2"]
+
+[ext_resource type="PackedScene" uid="uid://ct3jqgtvmr86q" path="res://models/props/block-grass-large.glb" id="1_bfdmw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o86qh"]
+size = Vector3(2.09219, 1, 2.0658)
+
+[node name="block-grass-large2" instance=ExtResource("1_bfdmw")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="block-grass-large" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="block-grass-large/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0178375, 0.498056, 0.00457764)
+shape = SubResource("BoxShape3D_o86qh")
