@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://f063bf46rfp2"]
+
+[ext_resource type="PackedScene" uid="uid://cde1gdldoewyg" path="res://models/props/block-grass-overhang-large-tall.glb" id="1_5cs5r"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uqxt4"]
+size = Vector3(1.99979, 1.98914, 1.99591)
+
+[node name="block-grass-overhang-large-tall2" instance=ExtResource("1_5cs5r")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="block-grass-overhang-large-tall" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="block-grass-overhang-large-tall/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00972128, 0.999261, -0.00257778)
+shape = SubResource("BoxShape3D_uqxt4")

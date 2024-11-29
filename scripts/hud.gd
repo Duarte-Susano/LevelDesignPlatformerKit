@@ -2,7 +2,7 @@ extends CanvasLayer
 @onready var level_complete: Label = %"Level Complete"
 @onready var coins_label: Label = %CoinsLabel
 @onready var play_again_button: Button = %PlayAgainButton
-@onready var environment: WorldEnvironment = %Environment
+@onready var environment: WorldEnvironment =  $"../WorldEnvironment"
 @onready var time_label: Label = %TimeLabel
 @onready var time_name_label: Label = %TimeNameLabel
 
@@ -26,7 +26,7 @@ func _process(delta: float) -> void:
 		seconds += delta
 		var minutes : String
 		if (seconds / 60) > 1:
-			var minutes_int : int = seconds / 60
+			var minutes_int : float = seconds / 60
 			minutes = str(minutes_int) + " : "
 		else:
 			minutes = ""
