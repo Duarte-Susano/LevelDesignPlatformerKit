@@ -4,10 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://bunxb353h3lje" path="res://objects/damage_dealer_area_3d.tscn" id="2_lgsom"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_51hsx"]
-size = Vector3(2.5, 1, 1)
+size = Vector3(2.00075, 0.497349, 0.503174)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wdfqi"]
-size = Vector3(2, 0.75, 0.75)
+size = Vector3(2.00342, 0.507324, 0.504272)
 
 [node name="spike-block-wide" instance=ExtResource("1_5lq27")]
 
@@ -15,12 +15,14 @@ size = Vector3(2, 0.75, 0.75)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="CollisionShape3D" parent="DamageDealerArea3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00319648, -0.000360429, -0.000122074)
 shape = SubResource("BoxShape3D_51hsx")
 
 [node name="AnimatableBody3D" type="AnimatableBody3D" parent="." index="2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AnimatableBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00170898, 0.000732422, -0.000305176)
 shape = SubResource("BoxShape3D_wdfqi")
 
 [editable path="DamageDealerArea3D"]

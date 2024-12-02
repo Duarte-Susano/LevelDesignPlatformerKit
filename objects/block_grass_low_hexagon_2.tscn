@@ -7,6 +7,9 @@ data = PackedVector3Array(0, 0.5, -0.5774, 0.5, 0.5, -0.2887, 0.5, 0.5, 0.2887, 
 
 [node name="block-grass-low-hexagon2" instance=ExtResource("1_mgw1p")]
 
+[node name="block-grass-low-hexagon" parent="." index="0"]
+transform = Transform3D(0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, 0, 0, 0)
+
 [node name="StaticBody3D" type="StaticBody3D" parent="block-grass-low-hexagon" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="block-grass-low-hexagon/StaticBody3D" index="0"]
