@@ -102,55 +102,55 @@ transform = Transform3D(-8.95218, -2.22125, 0.175173, -4.43737, 4.40709, -0.8093
 transform = Transform3D(-3.26288, -2.20443, -3.99772, -5.9275, 3.35765, 0.0383351, 4.2683, 2.97769, -3.0028, -10.6467, 65.4818, 8.65107)
 
 [node name="block-grass-hexagon2" parent="RightArm" instance=ExtResource("3_57d3t")]
-transform = Transform3D(4.63136, -1.00829, -0.852339, 0.50125, 1.96739, -3.74125, 1.81638, 2.02798, 3.2057, -12.7434, 58.9977, 13.8351)
+transform = Transform3D(4.80781, -0.465132, -1.13317, 0.489243, 2.89389, -1.22384, 1.28283, 0.639551, 4.71361, -13.8685, 59.1414, 14.5636)
 
 [node name="block-grass-large-slope-steep-narrow8" parent="RightArm" instance=ExtResource("9_0u3au")]
-transform = Transform3D(0.601042, -0.223559, 1.80802, 1.02939, 1.05381, -0.376711, -0.910547, 1.04379, 0.767571, -9.49727, 59.0095, 15.6507)
+transform = Transform3D(0.668669, 0.0572794, 1.78866, 0.251286, 1.46682, -0.250515, -1.31899, 0.308492, 0.859041, -10.5007, 59.4919, 16.1027)
 
 [node name="block-grass-large-slope-steep-narrow2" parent="RightArm" instance=ExtResource("9_0u3au")]
-transform = Transform3D(0.577649, 0.901338, 1.40089, 1.01816, 0.494718, -1.31224, -0.937908, 1.09217, -0.561717, -7.78493, 57.058, 15.1107)
+transform = Transform3D(0.641152, 1.07421, 1.10353, 0.231982, 0.815114, -1.6502, -1.33608, 0.657009, 0.243039, -9.19435, 57.2657, 16.7108)
 
 [node name="block-grass-large-slope-steep-narrow5" parent="RightArm" instance=ExtResource("9_0u3au")]
-transform = Transform3D(1.14671, -0.769805, 0.780263, 0.966786, 0.930996, -0.893006, -0.0194898, 0.889184, 1.61051, -11.4669, 56.8149, 17.4065)
+transform = Transform3D(1.2823, -0.514327, 0.778802, 0.567802, 1.38817, -0.0322253, -0.532266, 0.241765, 1.84186, -12.6201, 58.9898, 18.755)
 
 [node name="block-grass-large-slope-steep-narrow3" parent="RightArm" instance=ExtResource("9_0u3au")]
-transform = Transform3D(1.01918, 0.0964506, 1.46179, 1.02744, 0.452245, -1.32655, -0.394516, 1.42694, 0.321621, -9.77792, 54.7026, 17.5471)
+transform = Transform3D(1.1299, 0.310513, 1.24857, 0.443315, 1.11213, -1.20491, -0.881359, 0.957463, 0.994622, -11.2956, 56.9965, 20.0227)
 
 [node name="block-grass-large-slope-steep-narrow6" parent="RightArm" instance=ExtResource("9_0u3au")]
-transform = Transform3D(0.991601, -0.814702, -1.03536, -0.192936, 0.896548, -1.58267, 1.10883, 0.884569, 0.650519, -14.9105, 56.1135, 15.9733)
+transform = Transform3D(1.05146, -0.564507, -1.21161, 0.238938, 1.3659, -0.762726, 1.04275, 0.25624, 1.39651, -16.2571, 58.3108, 17.909)
 
 [node name="block-grass-large-slope-steep-narrow4" parent="RightArm" instance=ExtResource("9_0u3au")]
-transform = Transform3D(0.739429, -1.14996, 0.822815, -0.373445, -0.866057, -1.5552, 1.25051, 0.421341, -0.950966, -13.8837, 54.1435, 15.5131)
+transform = Transform3D(0.788378, -1.22908, 0.457668, 0.213486, -0.270758, -1.94645, 1.25812, 0.816121, 0.0434984, -15.6187, 56.2432, 18.5907)
 
 [node name="LeftArm" type="Node3D" parent="."]
 transform = Transform3D(0.999999, 0.001309, 0, -0.001309, 0.999999, 0, 0, 0, 1, 1.41203, 0.0030632, 1.68357)
 
 [node name="block-grass-low-long4" parent="LeftArm" instance=ExtResource("8_ne12r")]
-transform = Transform3D(8.71971, 2.22823, -1.01325, -2.10947, 3.57785, 3.32965, 4.41778, -2.68961, 3.58982, 21.9723, 74.917, 7.62978)
+transform = Transform3D(8.59249, 2.39912, -0.886876, -1.68698, 2.96559, 3.93622, 4.82941, -3.23257, 2.95291, 21.9729, 74.4861, 6.7234)
 
 [node name="block-grass-low-long2" parent="LeftArm" instance=ExtResource("8_ne12r")]
-transform = Transform3D(2.81548, 3.55917, -3.03906, -0.378423, 3.31025, 3.73982, 7.47863, -1.17242, 1.33335, 31.5341, 72.8733, 17.4029)
+transform = Transform3D(2.9364, 4.47998, -1.24965, -0.56849, 1.47453, 4.7644, 7.41986, -1.65997, 0.859581, 31.7743, 72.2945, 17.9818)
 
 [node name="block-grass-hexagon2" parent="LeftArm" instance=ExtResource("3_57d3t")]
-transform = Transform3D(4.57468, -0.106222, -2.01022, -0.474254, 2.84814, -1.49731, 1.96148, 0.93637, 4.32632, 34.5521, 71.9902, 25.5035)
+transform = Transform3D(-4.45547, 1.34144, 0.387878, -2.26569, -2.65818, -0.489072, 0.12499, -0.366938, 4.96089, 35.1397, 72.9036, 26.5997)
 
 [node name="block-grass-large-slope-steep-narrow2" parent="LeftArm" instance=ExtResource("9_0u3au")]
-transform = Transform3D(0.79925, -0.367905, 1.61979, 0.525743, 1.40263, 0.105184, -1.15533, 0.383762, 1.16842, 38.2935, 72.3262, 27.6742)
+transform = Transform3D(0.273039, 0.929861, 1.52655, -0.546185, -1.01785, 1.27588, 1.37009, -0.591068, 0.204419, 38.2909, 74.5377, 26.931)
 
 [node name="block-grass-large-slope-steep-narrow3" parent="LeftArm" instance=ExtResource("9_0u3au")]
-transform = Transform3D(0.924757, 0.165108, 1.55924, 0.272558, 1.41534, -0.553813, -1.14915, 0.468563, 1.12342, 40.6249, 70.6602, 29.2317)
+transform = Transform3D(0.107186, 1.48247, -0.269337, -0.363788, 0.222266, 1.91753, 1.45127, -0.0537753, 0.500555, 38.4823, 76.8212, 27.444)
 
 [node name="block-grass-large-slope-steep-narrow4" parent="LeftArm" instance=ExtResource("9_0u3au")]
-transform = Transform3D(1.48016, -0.0286974, 0.32197, 0.0505932, 1.49327, -0.176868, -0.237855, 0.139041, 1.96597, 34.9775, 71.7285, 29.4722)
+transform = Transform3D(-1.28288, 0.386003, -0.899598, -0.613688, -1.30206, 0.562611, -0.477077, 0.636919, 1.69534, 33.5045, 72.5567, 29.8306)
 
 [node name="block-grass-large-slope-steep-narrow5" parent="LeftArm" instance=ExtResource("9_0u3au")]
-transform = Transform3D(1.48016, -0.0286974, 0.32197, 0.0932524, 1.44263, -0.533537, -0.224586, 0.409871, 1.90044, 35.4958, 70.2305, 32.1441)
+transform = Transform3D(-1.42679, -0.280055, -0.49143, -0.261328, -0.498486, 1.85388, -0.382079, 1.38675, 0.567153, 32.7727, 74.4881, 30.7872)
 
 [node name="block-grass-large-slope-steep-narrow6" parent="LeftArm" instance=ExtResource("9_0u3au")]
-transform = Transform3D(1.24059, -0.032642, -1.12338, -0.0445513, 1.49424, -0.164654, 0.84199, 0.127159, 1.64648, 32.0035, 71.7285, 28.7701)
+transform = Transform3D(-1.14303, 0.969534, 0.0785967, -0.863299, -1.05576, 0.832754, 0.44518, 0.442006, 1.81668, 36.7273, 73.3709, 29.8376)
 
 [node name="block-grass-large-slope-steep-narrow7" parent="LeftArm" instance=ExtResource("9_0u3au")]
-transform = Transform3D(1.21249, -0.180877, -1.15251, -0.167562, 1.39441, -0.70244, 0.867064, 0.522408, 1.4759, 30.2912, 70.0377, 30.9994)
+transform = Transform3D(-1.30642, 0.658783, -0.440791, -0.551214, -0.42655, 1.77099, 0.489335, 1.27831, 0.818108, 36.3839, 75.5462, 31.801)
 
 [node name="face" type="Node3D" parent="."]
 transform = Transform3D(0.999999, 0.001309, 0, -0.001309, 0.999999, 0, 0, 0, 1, 1.41203, 0.0030632, 1.68357)
@@ -159,7 +159,7 @@ transform = Transform3D(0.999999, 0.001309, 0, -0.001309, 0.999999, 0, 0, 0, 1, 
 transform = Transform3D(-0.171749, 4.49334, -13.3994, -13.3611, -4.10519, -2.92617, -6.81551, 7.93457, 6.07411, 13.1811, 85.8187, 9.68007)
 
 [node name="coin-silver3" parent="face" instance=ExtResource("11_rvlh0")]
-transform = Transform3D(18.2719, 1.48371, 1.999, 2.24384, 17.9813, -2.116, -7.81681, 8.62978, 4.06529, 15.0901, 81.3343, 13.2298)
+transform = Transform3D(5.31153, 17.5934, 5.91792, -15.8351, 8.64995, -6.4704, -11.0017, -3.9562, 12.1701, 12.4992, 82.4397, 15.2953)
 
 [node name="block-grass-large-slope-steep-narrow2" parent="face" instance=ExtResource("9_0u3au")]
-transform = Transform3D(2.65762, -2.25145, 0.334942, 0.669627, 3.12334, 2.24494, -1.22011, -3.18994, 1.96165, 16.6796, 90.0366, 18.4497)
+transform = Transform3D(2.73937, -1.30876, 0.937655, -0.0847408, 3.62097, 2.06706, -1.22011, -3.18994, 1.96165, 17.725, 90.9847, 18.0747)
