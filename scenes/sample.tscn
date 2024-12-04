@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://e6jwbml72r4o"]
+[gd_scene load_steps=58 format=3 uid="uid://e6jwbml72r4o"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_apxki"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_hgw2l"]
@@ -25,10 +25,10 @@
 [ext_resource type="Texture2D" uid="uid://dm50aa4qogm65" path="res://sprites/button_rectangle_depth_gloss.png" id="27_ct75u"]
 [ext_resource type="PackedScene" uid="uid://dpo3dr26b06w3" path="res://objects/spike_block_wide.tscn" id="27_i7ntq"]
 [ext_resource type="PackedScene" uid="uid://b6ctyw8xrpa4l" path="res://objects/block_grass_low_hexagon_2.tscn" id="28_m1csu"]
-[ext_resource type="PackedScene" uid="uid://b5qs53andvf8c" path="res://models/props/trap-spikes-large.glb" id="28_o3usx"]
 [ext_resource type="PackedScene" uid="uid://dppaaoqj1t6n5" path="res://objects/spike_block.tscn" id="28_r7244"]
 [ext_resource type="PackedScene" uid="uid://4ih5ayxmjfo0" path="res://objects/block_grass_corner.tscn" id="29_1g3u0"]
 [ext_resource type="PackedScene" uid="uid://bs65o07otxbmm" path="res://objects/moving_object_path_3d.tscn" id="29_30bkc"]
+[ext_resource type="PackedScene" uid="uid://c06e76sksbui7" path="res://objects/trap_spikes_large.tscn" id="29_alsgi"]
 [ext_resource type="PackedScene" uid="uid://dfpisimsgf5ce" path="res://objects/coin.tscn" id="30_pqtcd"]
 [ext_resource type="PackedScene" uid="uid://dhxok27jxvik8" path="res://objects/flag.tscn" id="30_prnoi"]
 
@@ -132,21 +132,21 @@ point_count = 2
 
 [sub_resource type="Curve3D" id="Curve3D_kqoch"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -3.98, 10.805, 43.725, 0, 0, 0, 0, 0, 0, -11, 21.2, 35.9),
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -5.24, 8.7, 42.965, 0, 0, 0, 0, 0, 0, -11, 21.2, 35.9),
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
 
 [sub_resource type="Curve3D" id="Curve3D_4cqv4"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -7.65, 46.8, 34.65, 0, 0, 0, 0, 0, 0, 5.07, 52.665, 27.08),
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -7.65, 46.8, 34.65, 0, 0, 0, 0, 0, 0, 5.07, 52.8, 27.15),
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
 
 [sub_resource type="Curve3D" id="Curve3D_u4jl2"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 3.455, 52.695, 24.72, 0, 0, 0, 0, 0, 0, -9.31, 46.695, 32.22),
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 3.41, 52.695, 24.72, 0, 0, 0, 0, 0, 0, -9.31, 46.695, 32.22),
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
@@ -167,10 +167,17 @@ point_count = 2
 
 [sub_resource type="Curve3D" id="Curve3D_nv8ae"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -26.85, 60, -11.615, 0, 0, 0, 0, 0, 0, -19.065, 77, -22.65, 0, 0, 0, 0, 0, 0, -36.04, 77, 7.355),
-"tilts": PackedFloat32Array(0, 0, 0)
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -26.85, 60, -11.615, 0, 0, 0, 0, 0, 0, -19.065, 77, -22.65, 0, 0, 0, 0, 0, 0, -36.04, 77, 7.355, 0, 0, 0, 0, 0, 0, -36.04, 60, 7.355, 0, 0, 0, 0, 0, 0, -26.85, 60, -11.615),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0)
 }
-point_count = 3
+point_count = 5
+
+[sub_resource type="Curve3D" id="Curve3D_8jyav"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -36.04, 77, 7.355, 0, 0, 0, 0, 0, 0, -36.04, 60, 7.355, 0, 0, 0, 0, 0, 0, -26.85, 60, -11.615, 0, 0, 0, 0, 0, 0, -19.065, 77, -22.65, 0, 0, 0, 0, 0, 0, -36.04, 77, 7.355),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0)
+}
+point_count = 5
 
 [sub_resource type="Curve3D" id="Curve3D_xjlth"]
 _data = {
@@ -235,7 +242,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00591946, 0, -0.0332251)
 [node name="Island_1" type="Node3D" parent="MyWorld"]
 
 [node name="Grass_platform" parent="MyWorld/Island_1" instance=ExtResource("26_is2pv")]
-transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -134.616, 99.2773, 5.99159)
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 2, 0, -3, 0, -1.31134e-07, -134.616, 100.634, 5.99159)
 
 [node name="Grass_platform2" parent="MyWorld/Island_1" instance=ExtResource("26_is2pv")]
 transform = Transform3D(-3.49691e-08, 0, 2, 0, 2, 0, -0.8, 0, -8.74228e-08, 2.80033, 4.64807, -16.549)
@@ -286,8 +293,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.420181, 0.323196, -0.21497
 transform = Transform3D(3, 0, 0, 0, 2, 0, 0, 0, 3, -134.475, 100.818, -3.02028)
 
 [node name="button" parent="MyWorld/platform-moving" node_paths=PackedStringArray("target") instance=ExtResource("12_kk8bf")]
-transform = Transform3D(0.333333, 0, 0, 0, 0.5, 0, 0, 0, 0.333333, -0.0220222, 0.48917, 0.0409914)
+transform = Transform3D(0.333333, 0, 0, 0, 0.5, 0, 0, 0, 0.333333, -0.0220222, 0.443001, 0.0409914)
 target = NodePath("../../moving_object_path")
+
+[node name="checkpoint" parent="MyWorld/platform-moving" instance=ExtResource("26_6820t")]
+transform = Transform3D(0.333333, 0, 0, 0, 0.5, 0, 0, 0, 0.333333, -0.0204353, 0.56218, 0.0349826)
 
 [node name="moving_object_path" parent="MyWorld" node_paths=PackedStringArray("object_to_move") instance=ExtResource("29_30bkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.448349, 0, 0.0630637)
@@ -436,13 +446,13 @@ transform = Transform3D(0.06704, 0.460447, -0.885152, 1.73129e-08, 0.887148, 0.4
 transform = Transform3D(-0.345992, 0.270003, -0.898548, 0.0128539, 0.958972, 0.28321, 0.938149, 0.0864384, -0.335267, 11.4861, 19.0526, 0.257749)
 
 [node name="platform2" parent="GiantClimbing/Part1" instance=ExtResource("24_7tpol")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 12.1202, 20.5053, 4.38161)
+transform = Transform3D(3, 0, 0, 0, 2, 0, 0, 0, 3, 12.1202, 20.5053, 4.38161)
 
 [node name="moving_object_path2" parent="GiantClimbing/Part1" node_paths=PackedStringArray("object_to_move") instance=ExtResource("29_30bkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.530167, -0.0493135, 0.0148888)
 curve = SubResource("Curve3D_0nggo")
 object_to_move = NodePath("../platform2")
-movement_speed = 2.0
+movement_speed = 3.0
 ping_pong = true
 
 [node name="tree2" parent="GiantClimbing/Part1" instance=ExtResource("25_yrv8q")]
@@ -582,6 +592,9 @@ transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 0.534912, 22.4878, 2.26931)
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.0330143, 0.466763, -0.00995922)
 target = NodePath("../../moving_object_path5")
 
+[node name="checkpoint5" parent="GiantClimbing/Part2/platform-moving" instance=ExtResource("26_6820t")]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 0.0415165, 0.602066, 0.0204561)
+
 [node name="moving_object_path5" parent="GiantClimbing/Part2" node_paths=PackedStringArray("object_to_move") instance=ExtResource("29_30bkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2483, -30.1296, 3.27115)
 curve = SubResource("Curve3D_vb3ux")
@@ -629,10 +642,6 @@ transform = Transform3D(0.934428, 0, 0.356151, 0, 1, 0, -0.356151, 0, 0.934428, 
 [node name="button" parent="GiantClimbing/Part2" node_paths=PackedStringArray("target") instance=ExtResource("12_kk8bf")]
 transform = Transform3D(0.75777, 0, -0.652522, 0, 1, 0, 0.652522, 0, 0.75777, 9.50023, 7.82806, -4.79788)
 target = NodePath("../moving_object_path6")
-
-[node name="button2" parent="GiantClimbing/Part2" node_paths=PackedStringArray("target") instance=ExtResource("12_kk8bf")]
-transform = Transform3D(0.998622, 0.0524928, 0, -0.0524928, 0.998621, 0, 0, 0, 1, 3.988, 23.4443, -1.99996)
-target = NodePath("../moving_object_path5")
 
 [node name="moving_object_path6" parent="GiantClimbing/Part2" node_paths=PackedStringArray("object_to_move") instance=ExtResource("29_30bkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2483, -30.1296, 3.27115)
@@ -884,11 +893,25 @@ curve = SubResource("Curve3D_nv8ae")
 object_to_move = NodePath("../platform-moving")
 movement_speed = 3.0
 is_on_from_start = false
-ping_pong = true
+
+[node name="platform-moving2" parent="GiantClimbing/Part6" instance=ExtResource("4_5ex8m")]
+transform = Transform3D(2.63518, 0, -1.43382, 0, 1, 0, 1.43382, 0, 2.63518, -18.4419, 9.06331, 20.7829)
+
+[node name="moving_object_path3" parent="GiantClimbing/Part6" node_paths=PackedStringArray("object_to_move") instance=ExtResource("29_30bkc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.4038, -67.4984, 13.3254)
+curve = SubResource("Curve3D_8jyav")
+object_to_move = NodePath("../platform-moving2")
+movement_speed = 3.0
+is_on_from_start = false
 
 [node name="button" parent="GiantClimbing/Part6" node_paths=PackedStringArray("target") instance=ExtResource("12_kk8bf")]
 transform = Transform3D(0.983932, -0.175593, -0.0323288, 0.178487, 0.971951, 0.153147, 0.00453045, -0.156456, 0.987675, 0.503082, 0.194267, 2.16664)
 target = NodePath("../moving_object_path")
+
+[node name="button2" parent="GiantClimbing/Part6" node_paths=PackedStringArray("target") instance=ExtResource("12_kk8bf")]
+transform = Transform3D(0.983932, -0.175593, -0.0323288, 0.178487, 0.971951, 0.153147, 0.00453045, -0.156456, 0.987675, 0.503082, 0.194267, 2.16664)
+visible = false
+target = NodePath("../moving_object_path3")
 
 [node name="spike-block" parent="GiantClimbing/Part6" instance=ExtResource("28_r7244")]
 transform = Transform3D(1.78058, 0, -0.910779, 0, 2, 0, 0.910779, 0, 1.78058, -15.5947, 10.0878, 9.90458)
@@ -946,23 +969,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8486, 2.79417, -1.9358)
 [node name="Part7" type="Node3D" parent="GiantClimbing"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.496, 78.2884, 36.595)
 
-[node name="trap-spikes-large2" parent="GiantClimbing/Part7" instance=ExtResource("28_o3usx")]
+[node name="trap-spikes-large8" parent="GiantClimbing/Part7" instance=ExtResource("29_alsgi")]
 transform = Transform3D(2.77364, -0.630538, 0.953585, 0.419821, 2.88937, 0.689422, -1.06332, -0.503958, 2.7596, 3.31326, 1.59587, -0.727448)
 
-[node name="trap-spikes-large3" parent="GiantClimbing/Part7" instance=ExtResource("28_o3usx")]
-transform = Transform3D(2.79873, -0.391514, 1.0069, 0.190995, 2.93134, 0.608916, -1.06332, -0.503958, 2.7596, 5.45443, 1.84464, -1.5047)
+[node name="trap-spikes-large9" parent="GiantClimbing/Part7" instance=ExtResource("29_alsgi")]
+transform = Transform3D(2.78437, -0.548855, 0.972636, 0.341484, 2.90599, 0.662273, -1.06332, -0.503958, 2.7596, 5.49981, 1.89556, -1.44518)
 
-[node name="trap-spikes-large4" parent="GiantClimbing/Part7" instance=ExtResource("28_o3usx")]
-transform = Transform3D(2.80211, -0.33009, 1.01942, 0.13239, 2.93889, 0.587713, -1.06332, -0.503958, 2.7596, 7.61667, 2.01514, -2.28145)
+[node name="trap-spikes-large10" parent="GiantClimbing/Part7" instance=ExtResource("29_alsgi")]
+transform = Transform3D(2.78437, -0.548855, 0.972636, 0.341484, 2.90599, 0.662273, -1.06332, -0.503958, 2.7596, 7.65692, 2.02437, -2.25996)
 
-[node name="trap-spikes-large5" parent="GiantClimbing/Part7" instance=ExtResource("28_o3usx")]
-transform = Transform3D(2.80351, -0.294264, 1.02651, 0.0982441, 2.94269, 0.575251, -1.06332, -0.503958, 2.7596, 9.88919, 2.17995, -3.09692)
+[node name="trap-spikes-large11" parent="GiantClimbing/Part7" instance=ExtResource("29_alsgi")]
+transform = Transform3D(2.78437, -0.548855, 0.972636, 0.341484, 2.90599, 0.662273, -1.06332, -0.503958, 2.7596, 9.91525, 2.18943, -2.98638)
 
-[node name="trap-spikes-large6" parent="GiantClimbing/Part7" instance=ExtResource("28_o3usx")]
-transform = Transform3D(2.80027, -0.366277, 1.0121, 0.166906, 2.9346, 0.600229, -1.06332, -0.503958, 2.7596, 12.1556, 2.37426, -3.95766)
+[node name="trap-spikes-large12" parent="GiantClimbing/Part7" instance=ExtResource("29_alsgi")]
+transform = Transform3D(2.78437, -0.548855, 0.972636, 0.341484, 2.90599, 0.662273, -1.06332, -0.503958, 2.7596, 12.1483, 2.41548, -3.85915)
 
-[node name="trap-spikes-large7" parent="GiantClimbing/Part7" instance=ExtResource("28_o3usx")]
-transform = Transform3D(2.80115, -0.350035, 1.01541, 0.151411, 2.93658, 0.59462, -1.06332, -0.503958, 2.7596, 14.3991, 2.51761, -4.71799)
+[node name="trap-spikes-large13" parent="GiantClimbing/Part7" instance=ExtResource("29_alsgi")]
+transform = Transform3D(2.78437, -0.548855, 0.972636, 0.341484, 2.90599, 0.662273, -1.06332, -0.503958, 2.7596, 14.3162, 2.59849, -4.6884)
 
 [node name="block-grass-low-hexagon2" parent="GiantClimbing/Part7" instance=ExtResource("28_m1csu")]
 transform = Transform3D(1.97029, 0.20877, -0.272707, -0.182652, 1.98182, 0.197529, 0.290847, -0.169689, 1.97145, 3.42068, -1.88642, 2.6695)
@@ -1067,6 +1090,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.3451, 18.1561, -9.847)
 
 [node name="coin7" parent="GiantClimbing/Coins" instance=ExtResource("30_pqtcd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.7399, 11.2625, -19.802)
+
+[node name="coin9" parent="GiantClimbing/Coins" instance=ExtResource("30_pqtcd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.2892, 33.3398, 9.95372)
 
 [node name="coin2" parent="GiantClimbing/Coins" instance=ExtResource("30_pqtcd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.995091, -49.2326, 37.6903)
