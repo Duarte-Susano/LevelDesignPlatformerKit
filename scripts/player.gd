@@ -27,6 +27,8 @@ var latest_checkpoint : Vector3
 @onready var model = $Character
 @onready var animation = $Character/AnimationPlayer
 
+var checkpoint_Ref : Node3D
+
 # Functions
 
 func _ready() -> void:
@@ -160,10 +162,12 @@ func touched_goal() -> void:
 	reached_goal.emit()
 
 func player_died() -> void:
-	global_position = latest_checkpoint
+	global_position = checkpoint_Ref.global_position
 	
-func reached_checkpoint(checkpoint_pos : Vector3) -> void:
-	latest_checkpoint = checkpoint_pos
+func reached_checkpoint(checkpoint_pos : Vector3, inCheckpoint_Ref : Node3D) -> void:
+	#latest_checkpoint = checkpoint_pos
+	checkpoint_Ref = inCheckpoint_Ref
+	
 	
 func bounce_player(bounce_strength : float) -> void:
 	gravity = -bounce_strength

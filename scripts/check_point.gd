@@ -24,6 +24,6 @@ func _process(delta):
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body.has_method("reached_checkpoint"):
-		body.reached_checkpoint(global_position)
+		body.reached_checkpoint(global_position, self)
 		touched = true
 		jewel_mesh.get_surface_override_material(0).albedo_color = activated_color
